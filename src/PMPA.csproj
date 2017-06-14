@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{81B47C1C-92D0-4032-B824-43F0346A8F24}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PMPA</RootNamespace>
+    <AssemblyName>PMPA</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="DirectX.Capture, Version=1.0.4551.9303, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DirectShow-NET\DirectX.Capture.dll</HintPath>
+    </Reference>
+    <Reference Include="DShowNET, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DirectShow-NET\DShowNET.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\clsBallType.cs" />
+    <Compile Include="Classes\clsBatsman.cs" />
+    <Compile Include="Classes\clsBowler.cs" />
+    <Compile Include="Classes\clsBowlingStyle.cs" />
+    <Compile Include="Classes\clsCapture.cs" />
+    <Compile Include="Classes\clsCountry.cs" />
+    <Compile Include="Classes\clsCreateTables.cs" />
+    <Compile Include="Classes\clsEnds.cs" />
+    <Compile Include="Classes\clsFormCreater.cs" />
+    <Compile Include="Classes\clsGround.cs" />
+    <Compile Include="Classes\clsImportBallbyBall.cs" />
+    <Compile Include="Classes\clsMaps.cs" />
+    <Compile Include="Classes\clsMatch.cs" />
+    <Compile Include="Classes\clsMatchTypes.cs" />
+    <Compile Include="Classes\clsMessages.cs" />
+    <Compile Include="Classes\clsPlayer.cs" />
+    <Compile Include="Classes\clsRecordBall.cs" />
+    <Compile Include="Classes\clsRecordOver.cs" />
+    <Compile Include="Classes\clsShot.cs" />
+    <Compile Include="Classes\clsTeams.cs" />
+    <Compile Include="Classes\clsUser.cs" />
+    <Compile Include="Classes\clsWicket.cs" />
+    <Compile Include="Classes\connection.cs" />
+    <Compile Include="Classes\clsLoadSavedMatch.cs" />
+    <Compile Include="dsCountriesAll.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCountriesAll.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsGrounds.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsGrounds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsPlayerScores.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPlayerScores.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAnalyse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAnalyse.Designer.cs">
+      <DependentUpon>frmAnalyse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmBallType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBallType.Designer.cs">
+      <DependentUpon>frmBallType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCountry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCountry.Designer.cs">
+      <DependentUpon>frmCountry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCreateMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCreateMatch.Designer.cs">
+      <DependentUpon>frmCreateMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmGround.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmGround.Designer.cs">
+      <DependentUpon>frmGround.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLoadOldMatchs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLoadOldMatchs.Designer.cs">
+      <DependentUpon>frmLoadOldMatchs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCaptureVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCaptureVideo.Designer.cs">
+      <DependentUpon>frmCaptureVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMatchType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMatchType.Designer.cs">
+      <DependentUpon>frmMatchType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMatchWinning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMatchWinning.Designer.cs">
+      <DependentUpon>frmMatchWinning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPlayer.Designer.cs">
+      <DependentUpon>frmPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRptCountry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRptCountry.Designer.cs">
+      <DependentUpon>frmRptCountry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRptGround.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRptGround.Designer.cs">
+      <DependentUpon>frmRptGround.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRptPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRptPlayer.Designer.cs">
+      <DependentUpon>frmRptPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRptPlayerScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRptPlayerScore.Designer.cs">
+      <DependentUpon>frmRptPlayerScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmScoreCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmScoreCard.Designer.cs">
+      <DependentUpon>frmScoreCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmShots.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmShots.Designer.cs">
+      <DependentUpon>frmShots.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmToss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmToss.Designer.cs">
+      <DependentUpon>frmToss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmUser.Designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PMPADBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PMPADBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\frmAnalyse.resx">
+      <DependentUpon>frmAnalyse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBallType.resx">
+      <DependentUpon>frmBallType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCountry.resx">
+      <DependentUpon>frmCountry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCreateMatch.resx">
+      <DependentUpon>frmCreateMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmGround.resx">
+      <DependentUpon>frmGround.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLoadOldMatchs.resx">
+      <DependentUpon>frmLoadOldMatchs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCaptureVideo.resx">
+      <DependentUpon>frmCaptureVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMatchType.resx">
+      <DependentUpon>frmMatchType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMatchWinning.resx">
+      <DependentUpon>frmMatchWinning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPlayer.resx">
+      <DependentUpon>frmPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRptCountry.resx">
+      <DependentUpon>frmRptCountry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRptGround.resx">
+      <DependentUpon>frmRptGround.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRptPlayer.resx">
+      <DependentUpon>frmRptPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRptPlayerScore.resx">
+      <DependentUpon>frmRptPlayerScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmScoreCard.resx">
+      <DependentUpon>frmScoreCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmShots.resx">
+      <DependentUpon>frmShots.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmToss.resx">
+      <DependentUpon>frmToss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmUser.resx">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptGrounds.rdlc" />
+    <EmbeddedResource Include="rptCountriesAll.rdlc" />
+    <EmbeddedResource Include="rptPlayerScores.rdlc" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="PMPADBDataSet.xsc">
+      <DependentUpon>PMPADBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PMPADBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PMPADBDataSet.Designer.cs</LastGenOutput>
+      <SubType>
+      </SubType>
+    </None>
+    <None Include="PMPADBDataSet.xss">
+      <DependentUpon>PMPADBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PMPADB.sdf">
+    </Content>
+    <None Include="Resources\BG.jpg" />
+    <None Include="Resources\sachin-australia-melbourne-cricket-stadium-jpg-305160.jpg" />
+    <None Include="dsCountriesAll.xsc">
+      <DependentUpon>dsCountriesAll.xsd</DependentUpon>
+    </None>
+    <None Include="dsCountriesAll.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCountriesAll.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsCountriesAll.xss">
+      <DependentUpon>dsCountriesAll.xsd</DependentUpon>
+    </None>
+    <None Include="dsGrounds.xsc">
+      <DependentUpon>dsGrounds.xsd</DependentUpon>
+    </None>
+    <None Include="dsGrounds.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsGrounds.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsGrounds.xss">
+      <DependentUpon>dsGrounds.xsd</DependentUpon>
+    </None>
+    <None Include="dsPlayerScores.xsc">
+      <DependentUpon>dsPlayerScores.xsd</DependentUpon>
+    </None>
+    <None Include="dsPlayerScores.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPlayerScores.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsPlayerScores.xss">
+      <DependentUpon>dsPlayerScores.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Arrow_down.png" />
+    <None Include="Resources\pitch.jpg" />
+    <None Include="Resources\batsman-right-handed.jpg" />
+    <None Include="Resources\batsman-left-handed.jpg" />
+    <None Include="Resources\Ground-top-view.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxAXVLC">
+      <Guid>{DF2BBE39-40A8-433B-A279-073F48DA94B6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AXVLC">
+      <Guid>{DF2BBE39-40A8-433B-A279-073F48DA94B6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

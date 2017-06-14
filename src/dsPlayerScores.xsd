@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPlayerScores" targetNamespace="http://tempuri.org/dsPlayerScores.xsd" xmlns:mstns="http://tempuri.org/dsPlayerScores.xsd" xmlns="http://tempuri.org/dsPlayerScores.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPlayerScores" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsPlayerScores" msprop:Generator_UserDSName="dsPlayerScores" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblPlayerScores" msprop:Generator_UserTableName="tblPlayerScores" msprop:Generator_RowDeletedName="tblPlayerScoresRowDeleted" msprop:Generator_TableClassName="tblPlayerScoresDataTable" msprop:Generator_RowChangedName="tblPlayerScoresRowChanged" msprop:Generator_RowClassName="tblPlayerScoresRow" msprop:Generator_RowChangingName="tblPlayerScoresRowChanging" msprop:Generator_RowEvArgName="tblPlayerScoresRowChangeEvent" msprop:Generator_RowEvHandlerName="tblPlayerScoresRowChangeEventHandler" msprop:Generator_TablePropName="tblPlayerScores" msprop:Generator_TableVarName="tabletblPlayerScores" msprop:Generator_RowDeletingName="tblPlayerScoresRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PlayerName" msprop:Generator_UserColumnName="PlayerName" msprop:Generator_ColumnPropNameInRow="PlayerName" msprop:Generator_ColumnVarNameInTable="columnPlayerName" msprop:Generator_ColumnPropNameInTable="PlayerNameColumn" type="xs:string" default="00" minOccurs="0" />
+              <xs:element name="PlayedAgainst" msprop:Generator_UserColumnName="PlayedAgainst" msprop:Generator_ColumnPropNameInRow="PlayedAgainst" msprop:Generator_ColumnVarNameInTable="columnPlayedAgainst" msprop:Generator_ColumnPropNameInTable="PlayedAgainstColumn" type="xs:string" default="00" minOccurs="0" />
+              <xs:element name="Score" msprop:Generator_UserColumnName="Score" msprop:Generator_ColumnPropNameInRow="Score" msprop:Generator_ColumnVarNameInTable="columnScore" msprop:Generator_ColumnPropNameInTable="ScoreColumn" type="xs:string" default="00" minOccurs="0" />
+              <xs:element name="SR" msprop:Generator_UserColumnName="SR" msprop:Generator_ColumnPropNameInRow="SR" msprop:Generator_ColumnVarNameInTable="columnSR" msprop:Generator_ColumnPropNameInTable="SRColumn" type="xs:string" default="00" minOccurs="0" />
+              <xs:element name="Date" msprop:Generator_UserColumnName="Date" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInTable="DateColumn" type="xs:string" default="00" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

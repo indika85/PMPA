@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsGrounds" targetNamespace="http://tempuri.org/dsGrounds.xsd" xmlns:mstns="http://tempuri.org/dsGrounds.xsd" xmlns="http://tempuri.org/dsGrounds.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsGrounds" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsGrounds" msprop:Generator_UserDSName="dsGrounds" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblGrounds" msprop:Generator_UserTableName="tblGrounds" msprop:Generator_RowDeletedName="tblGroundsRowDeleted" msprop:Generator_TableClassName="tblGroundsDataTable" msprop:Generator_RowChangedName="tblGroundsRowChanged" msprop:Generator_RowClassName="tblGroundsRow" msprop:Generator_RowChangingName="tblGroundsRowChanging" msprop:Generator_RowEvArgName="tblGroundsRowChangeEvent" msprop:Generator_RowEvHandlerName="tblGroundsRowChangeEventHandler" msprop:Generator_TablePropName="tblGrounds" msprop:Generator_TableVarName="tabletblGrounds" msprop:Generator_RowDeletingName="tblGroundsRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="groundName" msprop:Generator_UserColumnName="groundName" msprop:Generator_ColumnPropNameInRow="groundName" msprop:Generator_ColumnVarNameInTable="columngroundName" msprop:Generator_ColumnPropNameInTable="groundNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="matchName" msprop:Generator_UserColumnName="matchName" msprop:Generator_ColumnPropNameInRow="matchName" msprop:Generator_ColumnVarNameInTable="columnmatchName" msprop:Generator_ColumnPropNameInTable="matchNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="date" msprop:Generator_UserColumnName="date" msprop:Generator_ColumnPropNameInRow="date" msprop:Generator_ColumnVarNameInTable="columndate" msprop:Generator_ColumnPropNameInTable="dateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="winningTeam" msprop:Generator_UserColumnName="winningTeam" msprop:Generator_ColumnPropNameInRow="winningTeam" msprop:Generator_ColumnVarNameInTable="columnwinningTeam" msprop:Generator_ColumnPropNameInTable="winningTeamColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="score" msprop:Generator_UserColumnName="score" msprop:Generator_ColumnPropNameInRow="score" msprop:Generator_ColumnVarNameInTable="columnscore" msprop:Generator_ColumnPropNameInTable="scoreColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
