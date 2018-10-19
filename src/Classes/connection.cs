@@ -38,7 +38,7 @@ namespace PMPA.Classes
         }
         public static SqlCeConnection getConnection(string path)
         {
-            string conString = "Data Source = " + path + "; Password =year1985";
+            string conString = "Data Source = " + path + "; Password =1234";
             SqlCeConnection con_temp = new SqlCeConnection(conString);
 
             try
@@ -61,7 +61,7 @@ namespace PMPA.Classes
             }
 
             //File.Delete(path);
-            string conString = "Data Source = " + path + "; Password =year1985";
+            string conString = "Data Source = " + path + "; Password =1234";
 
             //MessageBox.Show(conString);
 
