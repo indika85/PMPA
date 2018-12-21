@@ -14,3 +14,5 @@ The video capturing component in the system enables both player and training sta
 During a match or at the conclusion of a match, all authorized parties will have access to these video footages and statistical data. This information provides the coach, trainers and players the opportunity to observe how well they performed and the areas where they can improve. The system also allows capturing of other teams as well
 
 For the video capturing module of the application DirectShow.NET library was used. The purpose of this .NET library is to allow access to Microsoft's DirectShow functionality from within .NET applications. This library supports both Visual Basic .NET and C#.
+
+![Alt text](PMPA-UI5.jpg?raw=true "Home screen")
