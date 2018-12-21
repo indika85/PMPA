@@ -16,3 +16,9 @@ During a match or at the conclusion of a match, all authorized parties will have
 For the video capturing module of the application DirectShow.NET library was used. The purpose of this .NET library is to allow access to Microsoft's DirectShow functionality from within .NET applications. This library supports both Visual Basic .NET and C#.
 
 ![Alt text](PMPA-UI5.jpg?raw=true "Home screen")
+
+![Alt text](PMPA-UI1.jpg?raw=true "Match capture screen")
+
+![Alt text](PMPA-UI2.jpg?raw=true "Match creation screen")
+
+![Alt text](PMPA-UI4.jpg?raw=true "Adding a player")
